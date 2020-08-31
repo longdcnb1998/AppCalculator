@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_bg_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/line_view"
+        android:padding="@dimen/padding_10dp"
+        android:layout_marginStart="@dimen/margin_12dp"
+        android:layout_marginEnd="@dimen/margin_12dp"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_clock"
+        android:background="@drawable/shape_bg_transparent_radius_16dp_ripple"
+        android:padding="@dimen/padding_10dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/line_view"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_clock"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_calculator"
+        android:background="@drawable/shape_bg_transparent_radius_16dp_ripple"
+        android:padding="@dimen/padding_10dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_clock"
+        app:layout_constraintBottom_toBottomOf="@+id/line_view"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_calculator"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_backspace"
+        android:background="@drawable/shape_bg_transparent_radius_16dp_ripple"
+        android:padding="@dimen/padding_10dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/line_view"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_backspace"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"/>
+    
+    <EditText
+        android:gravity="end"
+        android:cursorVisible="true"
+        android:backgroundTint="@android:color/transparent"
+        android:id="@+id/edt_calculation"
+        android:fontFamily="@font/roboto_medium"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/padding_8dp"
+        android:textSize="@dimen/text_size_30sp"
+        android:textColor="@color/color_white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:gravity="end"
+        android:id="@+id/tv_result"
+        android:fontFamily="@font/roboto_medium"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_backspace"
+        android:padding="@dimen/padding_8dp"
+        android:textSize="@dimen/text_size_24sp"
+        android:textColor="@color/color_gray"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_gray">#A6FFFFFF</color>
+    <color name="color_bg_black">#010101</color>
+    <color name="color_green">#509805</color>
+    <color name="color_bg_gray">#CC1F1F1F</color>
+    <color name="color_bg_gray_25">#80807A7A</color>
+    <color name="color_red_clean">#eb4925</color>
+    <color name="statusBarColor">#010101</color>
+    <color name="transparent">#00000000</color>
+</resources>
